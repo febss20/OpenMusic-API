@@ -1,0 +1,40 @@
+{
+  "name": "open-music-v3",
+  "version": "3.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start-dev": "nodemon src/server.js",
+    "migrate": "node-pg-migrate",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src"
+  },
+  "keywords": [
+    "openmusic",
+    "api",
+    "express",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "OpenMusic API v3 - A music streaming API with albums and songs management",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.916.0",
+    "amqplib": "^0.10.4",
+    "auto-bind": "^4.0.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^3.3.11",
+    "node-pg-migrate": "^8.0.3",
+    "pg": "^8.16.3",
+    "redis": "^4.6.12"
+  },
+  "devDependencies": {
+    "eslint": "^9.38.0",
+    "nodemon": "^3.1.10"
+  }
+}
